@@ -1,0 +1,36 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="style.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Faculty+Glyphic&family=Inter:ital,opsz,wght@0,14..32,100..900;1,14..32,100..900&family=Poppins:wght@400;700&family=Roboto:ital,wght@0,100..900;1,100..900&family=Winky+Rough:ital,wght@0,300..900;1,300..900&display=swap" rel="stylesheet">
+    <script src="script.js" defer></script>
+    <title>Book Library</title>
+</head>
+<body>
+    <header>
+        <p> Library</p>
+        <nav>
+            <a href="#">About Us</a>
+            <button id="add-book-btn">Add Book</button>
+        </nav>
+    </header>
+
+    <form id="book-form" class="book-form">
+    <input type="text" id="title" placeholder="Title" required />
+    <input type="text" id="author" placeholder="Author" required />
+    <input type="number" id="pages" placeholder="Pages" required />
+    <label>
+        <input type="checkbox" id="has-read" />
+        Have you read it?
+    </label>
+    <button type="submit">Submit</button>
+    </form>
+
+    <section class="book-container">
+    </section>
+</body>
+</html>
